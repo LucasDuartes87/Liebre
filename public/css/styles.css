@@ -254,9 +254,11 @@
   .f-card {
     text-align: center;
     line-height: 24px;
-    color: var(--main-dark-gray)
+    color: var(--main-dark-gray);
+    padding:5px;
   }
-  
+ 
+
   /* Icon size & color */
   
   .card__icon {
@@ -268,14 +270,15 @@
   
   .card__icon:hover {
     color: var(--main-green);
-    transform: scale(1.5);
+    transform: scale(1.2);
+    transition: transform 0.5s; 
   }
   
   /* Copyright Text */
   
   .footer-container > p {
     color: var(--main-dark-gray);
-    margin-top:24px;
+    text-align: center;
   }
   /* ############################*/
   
@@ -366,11 +369,12 @@
     color: var(--main-light-gray);
     padding: 12px 24px;
     transition:all 0.7s ease;
+    border-radius: 10px;
   }
   
   .submit-btn:hover,
   .reset-btn:hover {
-    background-color: var(--main-blue);
+    background-color: #5675f0;
   }
   
   
