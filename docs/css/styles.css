@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Variables */
+  :root {
+  
+    /*Colors*/
+    --main-yellow: #eac923;
+    --main-blue: #03264c;
+    --main-green: #39b54a;
+    --main-black: #1c1c1c;
+    --main-dark-gray: #666;
+    --main-light-blue: #1259c3;
+    --main-light-gray: #ebebeb;
+  
+    /*Font-Sizes*/
+    --main-body-text: 12px;
+    --main-titles: 24px;
+    --main-prices: 18px;
+    --main-discounts: 16px;
+    --main-descriptions: 16px;
+  }
+  
+  /* Comienzo de la seccion HEADER */
+  .main-header {
+    background-color: var(--main-yellow);
+    padding: 12px;
+  }
+  
+  .main-header-top {
+    text-align: center;
+  }
+  
+  .main-header-top-text {
+    padding: 12px;
+    text-align: center;
+    font-size: 18px
+  }
+  
+  .fa-hand-holding-dollar {
+    margin-right: 8px;
+  }
+  
+  .main-header-top > img {
+    width: 60%;
+    margin: 8px auto;
+    padding: 8px;
+  }
+  
+  .main-header-bottom {
+    display: none;
+  }
+  
+  .main-header-burger-menu {
+    background-color: var(--main-light-blue);
+    font-size: 24px;
+    padding:6px 8px;
+    width: 40px;
+    border-radius: 6px;
+    text-align: center;
+    margin: 18px auto;
+  }
+  
+  .main-header-burger-menu > a > i {
+    color: var(--main-light-gray);
+  }
+  
+  /* Comienzo de la seccion MAIN */
+  
+  main {
+    background-color: var(--main-light-gray);
+  }
+  
+  .main-page-top-banner > img {
+    width: 100vw;
+  }
+  
+  .main-page-last-visit {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-page-last-visit > h2 {
+    font-size: var(--main-titles);
+    font-weight: 400;
+    text-align: center;
+    color: var(--main-dark-gray);
+    padding: 6px;
+    margin: 6px 0px
+  }
+  
+  .main-page-last-visit > .main-page-last-visit-item {
+    width: 90%;
+    justify-content: center;
+    background-color: #fff;
+    padding: 6px;
+    margin: 8px auto;
+    box-shadow: 0px 0px 10px rgb(100,100,100)
+  }
+  
+  .main-page-last-visit > .main-page-last-visit-item > img {
+    width: 100%;
+    border-bottom: 1px solid var(--main-light-gray);
+    margin-bottom: 12px;
+  }
+  
+  .fa-truck {
+    font-size: 1.2em;
+    color: var(--main-green);
+    padding: 12px;
+    border: 1px solid var(--main-green);
+    border-radius: 100%;
+  }
+  
+  .main-page-item-discount {
+    color: var(--main-green);
+    font-size: var(--main-discounts)
+  }
+  
+  .main-page-item-price {
+    color: var(--main-black);
+    font-size: var(--main-prices);
+  }
+  
+  .main-page-item-title {
+    color: var(--main-dark-gray);
+    font-weight: 400;
+    margin-bottom: 12px;
+    display: none;
+  }
+  
+  /*Comienzo del FOOTER*/
+  footer {
+    padding: 18px;
+  }
+  .footer-item {
+    padding: 18px;
+    text-align: center;
+    color: var(--main-dark-gray)
+  }
+  
+  .footer-item > article > i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--main-light-blue)
+  }
+  .footer-item > article > h2 {
+    font-size: var(--main-descriptions);
+  }
+  
+  .footer-item > article > p {
+    font-size: var(--main-body-text)
+  }
+  
+  .footer-copyright > article > p {
+    font-size: var(--main-body-text);
+    color: var(--main-dark-gray);
+    text-align: left;
+  }
+  
+  @media (min-width: 768px) {
+    .main-header-burger-menu {
+      display: none;
+    }
+  
+    .main-header {
+      flex-wrap: wrap;
+      max-width: 1199px;
+    }
+    
+    .main-header-top {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .main-header-top > .main-header-top-logo {
+      width: 200px;
+      margin: 0px
+    }
+  
+    .main-header-top > .main-header-top-text {
+      max-width: 215px;
+      text-align: left;
+      margin: 0px;
+    }
+    
+    .fa-hand-holding-dollar {
+      margin-right: 6px;
+    }
+  
+    .main-header-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .main-header-bottom > nav > ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    
+    .main-header-bottom > nav > ul > li > a {
+      text-decoration: none;
+      color: var(--main-black);
+      padding: 6px;
+    }
+  
+    .main-header-bottom-right-nav >ul >li {
+      margin: 6px;
+    }
+    .main-page-item-title {
+      display: block;
+    }
+  }
+  
+    @media (min-width: 1200px) {
+      .main-header {
+        max-width: 100%;
+        width: 100%;
+      }
+  
+      .main-header-top {
+        align-items: center;
+      }
+  
+      .main-header-top > .main-header-top-text {
+        max-width: 500px;
+        text-align: left;
+      }
+  
+      .main-header-top > .main-header-top-logo {
+        width: 300px;
+        max-width: 300px;
+      }
+      .main-page-item-title {
+        display: block;
+      }
+    }
